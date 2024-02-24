@@ -1,2 +1,2 @@
 # SPAN
-Progetto per il sito della pizzeria SPAN prova
+Progetto per il sito della pizzeria SPAN
