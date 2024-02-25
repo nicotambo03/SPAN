@@ -1,9 +1,21 @@
 body{
-    background-color: "black";
+    background-color: #E3DEE1;
 }
 
-.nav-bar{
-    height: 10vh;
-    width: 100%;
-    
+.header {
+    display: flex;
+}
+
+.logo {
+    flex: 0.5;
+    width: 7vh;
+}  
+
+.nav-bar {
+    margin-top: 1vh;
+    flex: 1;
+}  
+
+.elemento-lista{
+    margin-right: 5vh;
 }
