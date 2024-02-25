@@ -3,6 +3,11 @@
     src: url('./Assets/Fonts/Qwigley-Regular.ttf') format('truetype'); 
 }
 
+@font-face {
+    font-family: 'Titoli';
+    src: url('./Assets/Fonts/helveticaneue-roman.otf') format('truetype'); 
+}
+
 body{
     background-color: white;
     margin: 0;
@@ -34,7 +39,7 @@ body{
     margin-right: 5vh;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titoli';
 }
 
 .elemento-lista:hover{
@@ -63,20 +68,33 @@ body{
     width: auto;
     color: #fff; 
     z-index: 1;
-    font-size: 23vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22vh;
+    font-family: 'Titoli';
 }
 
 .sottotitolo{
     position: absolute;
     top: 47vh;
-    left: 58.5vh; 
+    left: 56.5vh; 
     width: auto;
     color: #fff; 
     z-index: 1;
     font-size: 10vh;
     font-family:'Sottotitoli';
     transform: rotate(-10deg);
+}
+
+.sottotitolo-ovale{
+    position: absolute;
+    top: 49.5vh;
+    left: 54.5vh; 
+    width: 25vh;
+    height: 7vh;
+    color: #fff; 
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1px solid #fff;
+    border-radius: 100%;
 }
 
 .button {
@@ -86,6 +104,7 @@ body{
     cursor: pointer; 
     border-radius: 8px; 
     transition: background-color 0.3s;
+    font-family: 'Titoli';
 }
 
 
