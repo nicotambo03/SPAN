@@ -7,7 +7,7 @@ body{
 }
 
 .logo {
-    flex: 0.4;
+    flex: 0.5;
     width: 7vh;
 }  
 
@@ -17,8 +17,9 @@ body{
 }  
 
 .lingua{
-    margin-top: 2.5vh;
-    flex: 1;
+    margin-top: 2.3vh;
+    margin-right: 1vh;
+    flex: 0.5;
 }
 
 .elemento-lista{
@@ -54,4 +55,19 @@ body{
     z-index: 1;
     font-size: 23vh;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    background-color: white; 
+    border: none; 
+    padding: 5px 10px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s; 
+}
+
+
+.button:hover {
+    background-color: #5C6B5F;
+    color: #fff;
 }
