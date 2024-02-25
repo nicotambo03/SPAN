@@ -7,7 +7,7 @@ body{
 }
 
 .logo {
-    flex: 0.5;
+    flex: 0.4;
     width: 7vh;
 }  
 
@@ -16,9 +16,20 @@ body{
     flex: 1;
 }  
 
+.lingua{
+    margin-top: 2.5vh;
+    flex: 1;
+}
+
 .elemento-lista{
     margin-right: 5vh;
-    
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.elemento-lista:hover{
+    color: #5C6B5F;
 }
 
 .container-immagine{
