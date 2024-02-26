@@ -25,7 +25,7 @@ body{
 }
 
 .logo {
-    flex: 0.4;
+    flex: 0.45;
     width: 7vh;
     margin-left: 0.5vh;
     margin-top: 0.5vh;
@@ -204,22 +204,46 @@ body{
   
   .indirizzo{
     position: absolute;
-    top: 113vh;
-    left: 90vh; 
+    top: 103vh;
+    left: 85.5vh; 
     width: auto;
     z-index: 1;
-    font-size: 2.5vh;
+    font-size: 6vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
     color: #fff;
-    font-family: 'Barra';
+}
+
+.indirizzo-ovale{
+    position: absolute;
+    top: 103vh;
+    left: 83vh; 
+    width: 20vh;
+    height: 6vh;
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1px solid #fff;
+    border-radius: 100%;
 }
 
 .indirizzo-icon{
-    width: 5vh;
-    height: 5vh;
+    width: 8vh;
+    height: 4vh;
     position: absolute;
-    top: 112vh;
-    left: 85vh; 
+    top: 113vh;
+    left: 83vh; 
     z-index: 1;
+}
+
+.indirizzo-via{
+    width: auto;
+    position: absolute;
+    top: 112.7vh;
+    left: 90vh; 
+    z-index: 1;
+    font-size: 2vh;
+    font-family:'Barra';
+    color: #fff;
 }
 
 .orari{
