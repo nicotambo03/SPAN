@@ -189,35 +189,43 @@ body{
     height: 100%;
     object-fit: cover;
   }
-  
-  .indirizzo{
+
+  .nome-pizzeria{
     position: absolute;
     top: 103vh;
     left: 85vh; 
     width: auto;
     z-index: 1;
-    font-size: 6vh;
-    font-family:'Sottotitoli';
-    transform: rotate(-10deg);
+    font-size: 4vh;
+    font-family:'Barra';
+    font-weight: bolder;
     color: #fff;
+  }
+  
+  .indirizzo{
+    position: absolute;
+    top: 113vh;
+    left: 90vh; 
+    width: auto;
+    z-index: 1;
+    font-size: 2.5vh;
+    color: #fff;
+    font-family: 'Barra';
 }
 
-.indirizzo-ovale{
+.indirizzo-icon{
+    width: 5vh;
+    height: 5vh;
     position: absolute;
-    top: 103vh;
-    left: 81.7vh; 
-    width: 20vh;
-    height: 6vh;
+    top: 112vh;
+    left: 85vh; 
     z-index: 1;
-    transform: rotate(-10deg);
-    border: 1px solid #fff;
-    border-radius: 100%;
 }
 
 .orari{
     position: absolute;
     top: 120vh;
-    left: 150vh; 
+    left: 86.7vh; 
     width: auto;
     z-index: 1;
     font-size: 6vh;
@@ -229,7 +237,7 @@ body{
 .orari-ovale{
     position: absolute;
     top: 120vh;
-    left: 144.8vh; 
+    left: 81.7vh; 
     width: 20vh;
     height: 6vh;
     z-index: 1;
@@ -263,6 +271,9 @@ body{
 }
 
 .splide__arrow{
-    box-shadow: none;
-    filter: none;
+    background: #ccc0 !important;
+    opacity: 1 !important;
+}
+.splide__arrow svg{
+    fill: #fff !important;
 }
