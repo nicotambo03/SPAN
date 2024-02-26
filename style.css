@@ -130,7 +130,7 @@ body{
     top: 90vh;
 }
 
-.goito{
+.goito-container{
     flex: 0.7;
     margin-top: 3vh;
     text-align: center;
@@ -142,7 +142,7 @@ body{
     color: #5C6B5F;
 }
 
-.massarenti{
+.massarenti-container{
     margin-top: 3vh;
     flex: 1;
     text-align: center;
@@ -154,7 +154,7 @@ body{
     color: #5C6B5F;
 }
 
-.laurabassi{
+.laurabassi-container{
     margin-top: 3vh;
     flex: 1;
     text-align: center;
