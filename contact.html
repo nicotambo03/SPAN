@@ -53,11 +53,12 @@
 
         </div>
     </div>
-    
+
     <div class="info-location">
         <div class="sub-info-container">
             <div class="image-container">
                 <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+                  
                     <div class="splide__track">
                       <ul class="splide__list">
                         <li class="splide__slide">
@@ -74,7 +75,10 @@
                   </section>
             </div>
             <div class="contacts-container">
-
+              <div class="indirizzo">Indirizzo</div>
+              <div class="indirizzo-ovale"></div>
+              <div class="orari">Orari</div>
+              <div class="orari-ovale"></div>
             </div>
         </div>
         <div class="map-container">
@@ -86,7 +90,7 @@
 <script>
     document.addEventListener( 'DOMContentLoaded', function() {
       var splide = new Splide( '#main-carousel',{
-        pagination: false,
+        arrowPath: ''
       } );
       splide.mount();
     } );
