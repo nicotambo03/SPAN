@@ -127,5 +127,41 @@ body{
 .location {
     display: flex;
     height: 10vh;
-    margin-left: 58vh;
+    top: 90vh;
+}
+
+.goito{
+    flex: 0.7;
+    margin-top: 3vh;
+    text-align: center;
+    font-family: 'Titoli';
+}
+
+.goito:hover{
+    cursor: pointer;
+    color: #5C6B5F;
+}
+
+.massarenti{
+    margin-top: 3vh;
+    flex: 1;
+    text-align: center;
+    font-family: 'Titoli';
+}
+
+.massarenti:hover{
+    cursor: pointer;
+    color: #5C6B5F;
+}
+
+.laurabassi{
+    margin-top: 3vh;
+    flex: 1;
+    text-align: center;
+    font-family: 'Titoli';
+}
+
+.laurabassi:hover{
+    cursor: pointer;
+    color: #5C6B5F;
 }
