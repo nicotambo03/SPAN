@@ -19,9 +19,10 @@ body{
 }
 
 .logo {
-    flex: 0.5;
+    flex: 0.45;
     width: 7vh;
     margin-left: 0.5vh;
+    margin-top: 0.5vh;
 }  
 
 .nav-bar {
@@ -111,4 +112,21 @@ body{
 .button:hover {
     background-color: #5C6B5F;
     color: #fff;
+}
+
+.freccia{
+    position: absolute;
+    top: 75vh;
+    left: 8vh; 
+    width: 8vh;
+    height: 4vh;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+.location {
+    display: flex;
+    height: 10vh;
+    text-align: center;
+    align-content: center;
 }
