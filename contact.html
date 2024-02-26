@@ -57,13 +57,19 @@
     <div class="info-location">
         <div class="sub-info-container">
             <div class="image-container">
-                <section class="splide" aria-label="Splide Basic HTML Example">
+                <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
                     <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide"><img src="./Assets/Images/Goito1.jpg" alt="" srcset=""></li>
-                              <li class="splide__slide"><img src="./Assets/Images/Goito2.jpg" alt="" srcset=""></li>
-                              <li class="splide__slide"><img src="./Assets/Images/Goito3.jpg" alt="" srcset=""></li>
-                          </ul>
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                          <img src="./Assets/Images/Goito1.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="./Assets/Images/Goito2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img src="./Assets/Images/Goito3.jpg" alt="">
+                        </li>
+                      </ul>
                     </div>
                   </section>
             </div>
@@ -79,9 +85,12 @@
 </body>
 <script>
     document.addEventListener( 'DOMContentLoaded', function() {
-      var splide = new Splide( '.splide' );
+      var splide = new Splide( '#main-carousel',{
+        pagination: false,
+      } );
       splide.mount();
     } );
+
   </script>
 </html>
 
