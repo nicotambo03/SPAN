@@ -8,7 +8,8 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css?version=1" />
     <script type="text/javascript" src="./script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"rel="stylesheet">
 </head>
 
 <body>
@@ -42,21 +43,45 @@
     </div>
 
     <div class="location">
-        <div class="goito-container">
+        <div>
             GOITO
         </div>
-
-        <div class="massarenti-container">
+        <div>
             MASSARENTI
         </div>
-        
-        <div class="laurabassi-container">
+        <div>
             LAURABASSI
-            <!-- <a href="">LAURABASSI</a> -->
+
         </div>
     </div>
+    <div class="info-location">
+        <div class="sub-info-container">
+            <div class="image-container">
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide"><img src="./Assets/Images/Goito1.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img src="./Assets/Images/Goito2.jpg" alt="" srcset=""></li>
+                              <li class="splide__slide"><img src="./Assets/Images/Goito3.jpg" alt="" srcset=""></li>
+                          </ul>
+                    </div>
+                  </section>
+            </div>
+            <div class="contacts-container">
 
+            </div>
+        </div>
+        <div class="map-container">
+
+        </div>
+
+    </div>
 </body>
-
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script>
 </html>
 

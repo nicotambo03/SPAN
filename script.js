@@ -1,3 +1,4 @@
+
 function translatePage() {
     const elementsToTranslate = document.querySelectorAll('[data-translate]');
     elementsToTranslate.forEach(element => {

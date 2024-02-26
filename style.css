@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Sottotitoli';
     src: url('./Assets/Fonts/Qwigley-Regular.ttf') format('truetype'); 
@@ -126,42 +127,40 @@ body{
 
 .location {
     display: flex;
-    height: 10vh;
+    height: 12vh;
     top: 90vh;
+    align-items: center;
+    justify-content: center;
 }
-
-.goito-container{
-    flex: 0.7;
-    margin-top: 3vh;
-    text-align: center;
+.location * {
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Titoli';
 }
-
-.goito:hover{
-    cursor: pointer;
+.location *:hover{
     color: #5C6B5F;
+    cursor:pointer;
 }
-
-.massarenti-container{
-    margin-top: 3vh;
-    flex: 1;
-    text-align: center;
-    font-family: 'Titoli';
+.info-location{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
 }
-
-.massarenti:hover{
-    cursor: pointer;
-    color: #5C6B5F;
+.sub-info-container{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(30, 255, 0);
 }
-
-.laurabassi-container{
-    margin-top: 3vh;
-    flex: 1;
-    text-align: center;
-    font-family: 'Titoli';
+.image-container{
+    margin: 0;
+    width: 45%;
+    height: 100%;
+    background-color: cadetblue;
 }
-
-.laurabassi:hover{
-    cursor: pointer;
-    color: #5C6B5F;
+.contacts-container{
+    margin: 0;
+    width: 55%;
+    height: 100%;
+    background-color: coral;
 }
