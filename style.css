@@ -173,14 +173,14 @@ body{
 }
 .image-container{
     margin: 0;
-    width: 45%;
+    width: 60%;
     height: 100%;
     background-color: #fff;
     overflow: hidden;
 }
 .contacts-container{
     margin: 0;
-    width: 55%;
+    width: 40%;
     height: 100%;
     background-color: #5C6B5F;
 }
@@ -213,81 +213,66 @@ body{
     color: #fff;
 }
 
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #5C6B5F;
+}
+.contacts-container div{
+    height: 10%;
+    color: #ffffff;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barra';
+    align-items: center;
+    margin-left: 5vh;
+}
+.addr-icon{
+    margin-right: 2vh;
+}
+.phone-icon{
+    margin-right: 2vh;
+}
+.time-icon{
+    margin-right: 2vh;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vh;
+    font-family: 'Barra';
+}
+.opening-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vh;
+    font-family: 'Barra';
+}
+
 .Title{
     margin-top: 4vh;
     font-size: 3vh;
+    font-weight: bold;
     color: white;
     font-family: 'Titoli';
     margin-left: 5vh;
 }
 
-.indirizzo{
+.address,
+.phone,
+.opening-time {
     display: flex;
-    flex-direction: row;
-    font-family: 'Barra';
-    align-items: center;
-    margin-left: 5vh;
+    align-items: center; /* Centra verticalmente i figli */
+    margin-bottom: 10px; /* Aggiungi spazio tra le coppie di icona e testo */
 }
-
-.indirizzo-icona{
-    margin-top: 5vh;
-    color: #fff;
-}
-
-.indirizzo-testi{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4.5vh;
-}
-
-.indirizzo-testo{
-    margin-left: 2vh;
-    color: #fff;
-}
-
-.telefono{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Barra';
-    align-items: center;
-    margin-left: 5vh;
-}
-
-.telefono-icona{
-    margin-top: 7vh;
-    color: #fff;
-}
-
-.telefono-testo{
-    margin-top: 5.5vh;
-    margin-left: 2vh;
-    color: #fff;
-}
-
-.orari{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Barra';
-    align-items: center;
-    margin-left: 5vh;
-    margin-top: 3vh;
-}
-
-.orari-icona{
-    color: #fff;
-}
-
-.orari-testi{
+.time-text{
     display: flex;
     flex-direction: column;
 }
-
-.orari-testo{
-    margin-top: 0.5vh;
-    margin-left: 2vh;
-    color: #fff;
-}
-
 .splide__arrow{
     background: #ccc0 !important;
     opacity: 1 !important;
