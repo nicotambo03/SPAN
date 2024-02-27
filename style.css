@@ -1,0 +1,347 @@
+
+@font-face {
+    font-family: 'Sottotitoli';
+    src: url('./Assets/Fonts/Qwigley-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Titoli';
+    src: url('./Assets/Fonts/helveticaneue-roman.otf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Barra';
+    src: url('./Assets/Fonts/typeunion-palo-wide-light.otf') format('truetype'); 
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Spazio tra i figli */
+    align-items: center; /* Centra verticalmente i figli */
+    height: 100px; /* Altezza dell'header */
+}
+
+.logo {
+    max-width: 100px; /* Larghezza massima del logo */
+    max-height: 100px; /* Altezza massima del logo */
+    margin-left: 10px; /* Margine sinistro per separare dal bordo sinistro */
+}
+.logo img{
+    margin-left: 0;
+}
+.nav-bar {
+    flex-grow: 1; /* La navbar occupa lo spazio rimanente */
+    display: flex;
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center; /* Centra gli elementi verticalmente */
+}
+
+.lingua {
+    width: 90px; /* Larghezza massima del selettore delle lingue */
+    max-height: 100px; /* Altezza massima del selettore delle lingue */
+    margin-right: 10px; /* Margine destro per separare dal bordo destro */
+    text-align: center;
+}
+
+
+.elemento-lista{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    text-decoration: none;
+    color: black;
+    font-family: 'Barra';
+}
+
+.elemento-lista:hover{
+    color: #5C6B5F;
+    transition: 0.3s;
+    
+}
+
+.container-immagine{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    border: none; 
+    display: block; 
+}
+
+.immagine-home{
+    width: 100%;
+    height: auto; 
+    display: block;
+    border: none;
+}
+
+.text-image{
+    position: absolute;
+    top: 30vh;
+    left: 10vh; 
+    width: auto;
+    color: #fff; 
+    z-index: 1;
+    font-size: 22vh;
+    font-family: 'Titoli';
+}
+
+.sottotitolo{
+    position: absolute;
+    top: 47vh;
+    left: 56.5vh; 
+    width: auto;
+    color: #fff; 
+    z-index: 1;
+    font-size: 10vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+}
+
+.sottotitolo-ovale{
+    position: absolute;
+    top: 49.5vh;
+    left: 54.5vh; 
+    width: 25vh;
+    height: 7vh;
+    color: #fff; 
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+}
+
+.button {
+    background-color: white; 
+    border: none; 
+    padding: 5px 10px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s;
+    font-family: 'Barra';
+    font-weight: bold;
+}
+
+
+.button:hover {
+    background-color: #5C6B5F;
+    color: #fff;
+}
+
+.freccia{
+    position: absolute;
+    top: 75vh;
+    left: 8vh; 
+    width: 8vh;
+    height: 4vh;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+.location {
+    display: flex;
+    height: 12vh;
+    top: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.location * {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Barra';
+    font-weight: bold;
+}
+.location *:hover{
+    color: #5C6B5F;
+    cursor:pointer;
+}
+.info-location{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.sub-info-container{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(30, 255, 0);
+}
+.image-container{
+    margin: 0;
+    width: 45%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.contacts-container{
+    margin: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.splide {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .splide__track {
+    height: 100%;
+  }
+  
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nome-pizzeria{
+    position: absolute;
+    top: 103vh;
+    left: 85vh; 
+    width: auto;
+    z-index: 1;
+    font-size: 4vh;
+    font-family:'Barra';
+    font-weight: bolder;
+    color: #fff;
+  }
+  
+  .indirizzo{
+    position: absolute;
+    top: 113vh;
+    left: 90vh; 
+    width: auto;
+    z-index: 1;
+    font-size: 2.5vh;
+    color: #fff;
+    font-family: 'Barra';
+}
+
+.indirizzo-icon{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    top: 112vh;
+    left: 85vh; 
+    z-index: 1;
+}
+
+.orari{
+    position: absolute;
+    top: 120vh;
+    left: 86.7vh; 
+    width: auto;
+    z-index: 1;
+    font-size: 6vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+    color: #fff;
+}
+
+.orari-ovale{
+    position: absolute;
+    top: 120vh;
+    left: 81.7vh; 
+    width: 20vh;
+    height: 6vh;
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.telefono{
+    position: absolute;
+    top: 138vh;
+    left: 85.5vh; 
+    width: auto;
+    z-index: 1;
+    font-size: 6vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+    color: #fff;
+}
+
+.telefono-ovale{
+    position: absolute;
+    top: 138vh;
+    left: 81.7vh; 
+    width: 20vh;
+    height: 6vh;
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.splide__arrow{
+    background: #ccc0 !important;
+    opacity: 1 !important;
+}
+.splide__arrow svg{
+    fill: #fff !important;
+}
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-container div{
+    height: 10%;
+    color: #5C6B5F;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barra';
+    align-items: center;
+    margin-left: 5vh;
+}
+.addr-icon{
+    margin-right: 2vh;
+}
+.phone-icon{
+    margin-right: 2vh;
+}
+.time-icon{
+    margin-right: 2vh;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vh;
+    font-family: 'Barra';
+}
+.opening-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vh;
+    font-family: 'Barra';
+}
+
+.Title{
+    margin-top: 4vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+    font-family: 'Helvetica Neue';
+    margin-left: 5vh;
+}
+.address,
+.phone,
+.opening-time {
+    display: flex;
+    align-items: center; /* Centra verticalmente i figli */
+    margin-bottom: 10px; /* Aggiungi spazio tra le coppie di icona e testo */
+}
+.time-text{
+    display: flex;
+    flex-direction: column;
+}
