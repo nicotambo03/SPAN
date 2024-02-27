@@ -22,25 +22,33 @@ body{
 
 .header {
     display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100px; 
 }
 
 .logo {
-    flex: 0.45;
-    width: 7vh;
-    margin-left: 0.5vh;
-    margin-top: 0.5vh;
-}  
-
-.nav-bar {
-    margin-top: 1vh;
-    flex: 1;
-}  
-
-.lingua{
-    margin-top: 2.3vh;
-    margin-right: 2vh;
-    flex: 0.5;
+    max-width: 100px; 
+    max-height: 80px; 
+    margin-left: 10px;
 }
+.logo img{
+    margin-left: 0;
+}
+.nav-bar {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lingua {
+    width: 90px; 
+    max-height: 100px; 
+    margin-right: 10px;
+    text-align: center;
+}
+
 
 .elemento-lista{
     margin-right: 5vh;
@@ -52,6 +60,7 @@ body{
 
 .elemento-lista:hover{
     color: #5C6B5F;
+    transition: 0.3s;
 }
 
 .container-immagine{
@@ -144,6 +153,8 @@ body{
     margin-right: auto;
     font-family: 'Barra';
     font-weight: bold;
+    height: 100%;
+    width: 100%;
 }
 .location *:hover{
     color: #5C6B5F;
@@ -180,17 +191,17 @@ body{
     height: 100%;
   }
   
-  .splide__track {
+.splide__track {
     height: 100%;
   }
   
-  .splide__slide img {
+.splide__slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .nome-pizzeria{
+.nome-pizzeria{
     position: absolute;
     top: 103vh;
     left: 85vh; 
@@ -200,98 +211,81 @@ body{
     font-family:'Barra';
     font-weight: bolder;
     color: #fff;
-  }
-  
-  .indirizzo{
-    position: absolute;
-    top: 103vh;
-    left: 85.5vh; 
-    width: auto;
-    z-index: 1;
-    font-size: 6vh;
-    font-family:'Sottotitoli';
-    transform: rotate(-10deg);
+}
+
+.Title{
+    margin-top: 4vh;
+    font-size: 3vh;
+    color: white;
+    font-family: 'Titoli';
+    margin-left: 5vh;
+}
+
+.indirizzo{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barra';
+    align-items: center;
+    margin-left: 5vh;
+}
+
+.indirizzo-icona{
+    margin-top: 5vh;
     color: #fff;
 }
 
-.indirizzo-ovale{
-    position: absolute;
-    top: 103vh;
-    left: 83vh; 
-    width: 20vh;
-    height: 6vh;
-    z-index: 1;
-    transform: rotate(-10deg);
-    border: 1px solid #fff;
-    border-radius: 100%;
+.indirizzo-testi{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5vh;
 }
 
-.indirizzo-icon{
-    width: 8vh;
-    height: 4vh;
-    position: absolute;
-    top: 113vh;
-    left: 83vh; 
-    z-index: 1;
+.indirizzo-testo{
+    margin-left: 2vh;
+    color: #fff;
 }
 
-.indirizzo-via{
-    width: auto;
-    position: absolute;
-    top: 112.7vh;
-    left: 90vh; 
-    z-index: 1;
-    font-size: 2vh;
-    font-family:'Barra';
+.telefono{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barra';
+    align-items: center;
+    margin-left: 5vh;
+}
+
+.telefono-icona{
+    margin-top: 7vh;
+    color: #fff;
+}
+
+.telefono-testo{
+    margin-top: 5.5vh;
+    margin-left: 2vh;
     color: #fff;
 }
 
 .orari{
-    position: absolute;
-    top: 120vh;
-    left: 86.7vh; 
-    width: auto;
-    z-index: 1;
-    font-size: 6vh;
-    font-family:'Sottotitoli';
-    transform: rotate(-10deg);
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barra';
+    align-items: center;
+    margin-left: 5vh;
+    margin-top: 3vh;
+}
+
+.orari-icona{
     color: #fff;
 }
 
-.orari-ovale{
-    position: absolute;
-    top: 120vh;
-    left: 81.7vh; 
-    width: 20vh;
-    height: 6vh;
-    z-index: 1;
-    transform: rotate(-10deg);
-    border: 1px solid #fff;
-    border-radius: 100%;
+.orari-testi{
+    display: flex;
+    flex-direction: column;
 }
 
-.telefono{
-    position: absolute;
-    top: 138vh;
-    left: 85.5vh; 
-    width: auto;
-    z-index: 1;
-    font-size: 6vh;
-    font-family:'Sottotitoli';
-    transform: rotate(-10deg);
+.orari-testo{
+    margin-top: 0.5vh;
+    margin-left: 2vh;
     color: #fff;
-}
-
-.telefono-ovale{
-    position: absolute;
-    top: 138vh;
-    left: 81.7vh; 
-    width: 20vh;
-    height: 6vh;
-    z-index: 1;
-    transform: rotate(-10deg);
-    border: 1px solid #fff;
-    border-radius: 100%;
 }
 
 .splide__arrow{
@@ -300,4 +294,32 @@ body{
 }
 .splide__arrow svg{
     fill: #fff !important;
+}
+
+.location-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.location-text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #5C6B5F; /* Colore di riempimento iniziale */
+    transition: height 0.3s ease-in-out; /* Transizione per l'altezza */
+    z-index: -1; /* Sposta l'elemento di sfondo dietro il testo */
+    
+}
+
+.location-text:hover::before {
+    height: 100%; /* Altezza finale, riempie tutto lo spazio verticale */
+}
+.location-text:hover {
+    color: #fff; /* Colore del testo al passaggio */
+    transition:  .3s;
 }
