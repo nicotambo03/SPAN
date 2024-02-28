@@ -308,3 +308,7 @@ body{
     color: #fff; /* Colore del testo al passaggio */
     transition:  .3s;
 }
+.map-container{
+    width: 100%;
+    height: 50vh;
+}
