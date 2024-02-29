@@ -312,3 +312,26 @@ body{
     width: 100%;
     height: 50vh;
 }
+footer{
+    display: flex;
+    height: 7vh;
+    background: #383838;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.informative a{
+    text-decoration: none;
+    color: white;
+}
+.informative a:hover{
+    color: #5C6B5F;
+    transition: .4s;
+}
+.informative{
+    color: white;
+    margin-bottom: .8vh;
+}
+.piva{
+    color: white;
+}
