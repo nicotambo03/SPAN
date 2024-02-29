@@ -7,6 +7,20 @@ var map = document.getElementById("mapemb");
 var img1 = document.getElementById("im1");
 var img2 = document.getElementById("im2");
 var img3 = document.getElementById("im3");
+var splide = new Splide('#main-carousel', {
+    type: 'loop',
+});
+var goito = false;
+var massa = false;
+var laura = false;
+splide.mount();
+
+function updateSplide(images) {
+    var splideSlides = document.querySelectorAll('.splide__slide img');
+    splideSlides.forEach(function(slide, index) {
+        slide.src = images[index];
+    });
+}
 
 function changeButtonColor() {
   var ita = document.getElementById("it");
@@ -32,6 +46,7 @@ function translatePage() {
     divsToTranslate.forEach(function(div) {
         if (!isTrue) {
             div.innerHTML = div.dataset.translate;
+
         } else {
             div.innerHTML = div.dataset.translateit;
         }
@@ -43,7 +58,15 @@ document.getElementById('en').addEventListener('click', function () {
         isTrue = false;
         changeButtonColor();
         translatePage();
+        if (goito) {
+            title.innerHTML = "Bologna Goito"
+        }else if (massa) {
+            title.innerHTML = "Bologna Massarenti"
+        }else if(laura){
+            title.innerHTML = "Bologna Laura Bassi"
+        }
     }
+
 });
 
 document.getElementById('it').addEventListener('click', function () {
@@ -51,9 +74,21 @@ document.getElementById('it').addEventListener('click', function () {
         isTrue = true;
         changeButtonColor();
         translatePage();
+        if (goito) {
+            title.innerHTML = "Pizzeria a Goito"
+        }else if (massa) {
+            title.innerHTML = "Pizzeria a Massarenti"
+        }else if(laura){
+            title.innerHTML = "Pizzeria a Laura Bassi"
+        }
     }
 });
     document.getElementById("goito").addEventListener('click',function () {
+        goito = true;
+        massa = false;
+        laura = false;
+        var images = ["./Assets/Images/Goito1.jpg", "./Assets/Images/Goito2.jpg", "./Assets/Images/Goito3.jpg"];
+        updateSplide(images);
         document.getElementById("infos").style.display = "block"
         if (isTrue) {
             title.innerHTML = "Pizzeria a Bologna Goito"
@@ -70,6 +105,11 @@ document.getElementById('it').addEventListener('click', function () {
         img3.src = "./Assets/Images/Goito3.jpg"
     });
     document.getElementById("massarenti").addEventListener('click',function () {
+        goito = false;
+        massa = true;
+        laura = false;
+        var images = ["./Assets/Images/Massarenti1.jpg", "./Assets/Images/Massarenti2.jpg", "./Assets/Images/Massarenti3.jpg"];
+        updateSplide(images);
         document.getElementById("infos").style.display = "block"
         if (isTrue) {
             title.innerHTML = "Pizzeria a Bologna Massarenti"
@@ -86,6 +126,11 @@ document.getElementById('it').addEventListener('click', function () {
         img3.src = "./Assets/Images/Massarenti3.jpg"
     });
     document.getElementById("laurabassi").addEventListener('click',function () {
+        goito = false;
+        massa = false;
+        laura = true;
+        var images = ["./Assets/Images/Laurabassi1.jpg", "./Assets/Images/Laurabassii2.jpg", "./Assets/Images/Laurabassi3.jpg"];
+        updateSplide(images);
         document.getElementById("infos").style.display = "block"
         if (isTrue) {
             title.innerHTML = "Pizzeria a Laura Bassi"

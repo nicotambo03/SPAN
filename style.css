@@ -168,7 +168,7 @@ body{
 .sub-info-container{
     display: flex;
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     background-color: rgb(30, 255, 0);
 }
 .image-container{
