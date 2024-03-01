@@ -13,6 +13,8 @@ var splide = new Splide('#main-carousel', {
 var goito = false;
 var massa = false;
 var laura = false;
+var firstclick = true;
+var section = document.getElementById("info-sect");
 splide.mount();
 
 function updateSplide(images) {
@@ -88,6 +90,7 @@ document.getElementById('it').addEventListener('click', function () {
         massa = false;
         laura = false;
         var images = ["./Assets/Images/Goito1.jpg", "./Assets/Images/Goito2.jpg", "./Assets/Images/Goito3.jpg"];
+        
         updateSplide(images);
         document.getElementById("infos").style.display = "block"
         if (isTrue) {
@@ -103,6 +106,9 @@ document.getElementById('it').addEventListener('click', function () {
         img1.src = "./Assets/Images/Goito1.jpg"
         img2.src = "./Assets/Images/Goito2.jpg"
         img3.src = "./Assets/Images/Goito3.jpg"
+        if (firstclick) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     });
     document.getElementById("massarenti").addEventListener('click',function () {
         goito = false;
@@ -124,6 +130,9 @@ document.getElementById('it').addEventListener('click', function () {
         img1.src = "./Assets/Images/Massarenti1.jpg"
         img2.src = "./Assets/Images/Massarenti2.jpg"
         img3.src = "./Assets/Images/Massarenti3.jpg"
+        if (firstclick) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     });
     document.getElementById("laurabassi").addEventListener('click',function () {
         goito = false;
@@ -145,4 +154,7 @@ document.getElementById('it').addEventListener('click', function () {
         img1.src = "./Assets/Images/Laurabassi1.jpg"
         img2.src = "./Assets/Images/Laurabassi2.jpg"
         img3.src = "./Assets/Images/Laurabassi3.jpg"
+        if (firstclick) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     });
