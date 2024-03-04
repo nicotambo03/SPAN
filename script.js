@@ -54,6 +54,7 @@ function translatePage() {
         }
     });
 }
+
 translatePage()
 document.getElementById('en').addEventListener('click', function () {
     if (isTrue) {
