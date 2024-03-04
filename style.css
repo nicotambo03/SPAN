@@ -334,3 +334,43 @@ footer{
 .piva{
     color: white;
 }
+.menu-container{
+    height: 1000vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.titolo-menu-ovale{
+    margin: 10vh;
+    width: 25vh;
+    height: 7vh;
+    border-radius: 100%;
+    border: 1.5px solid black;
+    transform: rotate(-10deg);
+}
+.titolo-menu{
+    position: absolute;
+    top: 101.75vh;
+    left: 11vh;
+    font-family: 'Sottotitoli';
+    font-size: 9vh;
+    transform: rotate(-10deg);
+}
+.antipasti-container{
+    display: flex;
+    flex-direction:row;
+}
+.antipasto{
+    width: 30vh;
+    height: 30vh;
+    overflow: hidden;
+    border: none; 
+    display: block;
+    object-fit: cover;
+}
+.antipasto-didascalia{
+    margin-left: 5vh;
+    font-family: 'Barra';
+    font-size: 2vh;
+    font-weight: bold;
+}
