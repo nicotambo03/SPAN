@@ -341,7 +341,7 @@ footer{
     flex-direction: column;
 }
 .titolo-menu-ovale{
-    margin: 10vh;
+    margin: 7vh;
     width: 25vh;
     height: 7vh;
     border-radius: 100%;
@@ -350,8 +350,8 @@ footer{
 }
 .titolo-menu{
     position: absolute;
-    top: 101.75vh;
-    left: 11vh;
+    top: 98vh;
+    left: 8.5vh;
     font-family: 'Sottotitoli';
     font-size: 9vh;
     transform: rotate(-10deg);
@@ -359,18 +359,24 @@ footer{
 .antipasti-container{
     display: flex;
     flex-direction:row;
+    margin-top: 2vh;
 }
 .antipasto{
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
     overflow: hidden;
     border: none; 
     display: block;
     object-fit: cover;
+    padding-bottom: 2vh;
 }
 .antipasto-didascalia{
-    margin-left: 5vh;
+    margin-left: 5.8vh;
     font-family: 'Barra';
-    font-size: 2vh;
+    font-size: 2.3vh;
     font-weight: bold;
+    text-align: center;
+}
+.descrizione{
+    font-size: 1.7vh;
 }
