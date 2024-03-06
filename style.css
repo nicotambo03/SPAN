@@ -383,6 +383,7 @@ footer{
 .descrizione{
     font-size: 1.7vh;
     width: 80%;
+    margin-top: 2vh;
 }
 .prezzo{
     width: 35%;
