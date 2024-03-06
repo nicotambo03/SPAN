@@ -13,6 +13,11 @@
     src: url('./Assets/Fonts/typeunion-palo-wide-light.otf') format('truetype'); 
 }
 
+@font-face {
+    font-family: 'Menu';
+    src: url('./Assets/Fonts/NimbusSanL-Reg.otf') format('truetype'); 
+}
+
 body{
     background-color: white;
     margin: 0;
@@ -349,13 +354,13 @@ footer{
     font-size: 9vh;
     padding-bottom: 2vh;
 }
-.antipasti-container{
+.riga-piatti{
     display: flex;
     flex-direction:row;
     width: 100%;
     margin-top: 3vh;
 }
-.antipasto{
+.immagine-piatto{
     width: 100%;
     height: 35vh;
     overflow: hidden;
@@ -364,19 +369,22 @@ footer{
     padding-bottom: 2vh;
 }
 
-.antipasto-didascalia{
+.piatto{
     width: 25%;
     margin-left: 3vh;
     margin-right: 3vh;
-    font-family: 'Barra';
-    font-size: 2.3vh;
+    font-family: 'Menu';
+    color: #515151;
+    font-size: 2.1vh;
     text-align: left;
     padding-bottom: 1.5vh;
 }
 .descrizione{
-    font-size: 1.7vh;
+    font-family: 'Titoli';
+    font-size: 1.6vh;
     width: 80%;
     margin-top: 2vh;
+    font-weight: lighter;
 }
 .prezzo{
     width: 35%;
