@@ -345,14 +345,9 @@ footer{
     border-radius: 100%;
     border: 1.5px solid black;
     transform: rotate(-10deg);
-}
-.titolo-menu{
-    position: absolute;
-    top: 98vh;
-    left: 8.5vh;
     font-family: 'Sottotitoli';
     font-size: 9vh;
-    transform: rotate(-10deg);
+    padding-bottom: 2vh;
 }
 .antipasti-container{
     display: flex;
