@@ -338,7 +338,6 @@ footer{
     color: white;
 }
 .menu-container{
-    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -374,7 +373,6 @@ footer{
     margin-left: 3vh;
     margin-right: 3vh;
     font-family: 'Menu';
-    color: #515151;
     font-size: 2.1vh;
     text-align: left;
     padding-bottom: 1.5vh;
@@ -385,6 +383,7 @@ footer{
     width: 80%;
     margin-top: 2vh;
     font-weight: lighter;
+    color: #515151;
 }
 .prezzo{
     width: 35%;
@@ -397,4 +396,5 @@ footer{
 .nome-prezzo{
     display: flex;
     flex-direction: row;
+    color: #000000;
 }
