@@ -398,3 +398,39 @@ footer{
     flex-direction: row;
     color: #000000;
 }
+.sottotitolo-home{
+    position: absolute;
+    top: 23vh;
+    left: 13.5vh;
+    width: auto;
+    color: #fff;
+    z-index: 1;
+    font-size: 10vh;
+    font-family: 'Sottotitoli';
+    transform: rotate(-10deg);
+}
+
+.sottotitolo-ovale-home{
+    position: absolute;
+    top: 25.5vh;
+    left: 12.5vh;
+    width: 25vh;
+    height: 7vh;
+    color: #fff;
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+}
+.subtext{
+    font-family: 'Titoli';
+    font-size: 18px;
+    text-align: justify;
+    color: #ffffffa8;
+    font-weight: bold;
+    position: absolute;
+    top: 70.5vh;
+    z-index: 2;
+    max-width: 52vh;
+    left: 15vh;
+}
