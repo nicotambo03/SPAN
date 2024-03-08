@@ -434,3 +434,12 @@ footer{
     max-width: 52vh;
     left: 15vh;
 }
+.subtitle{
+    font-family: 'Titoli';
+    font-size: 3vh;
+    position: absolute;
+    z-index: 3;
+    top: 53vh;
+    left: 11vh;
+    color: white;
+}
