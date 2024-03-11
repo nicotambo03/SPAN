@@ -444,38 +444,92 @@ footer{
     color: white;
 }
 .menu-sec{
-    height: 70vh;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+}
+.menu-subsec{
+    width: 64%;
 }
 .men-texts{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 12vh;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
-.men-title{
-    color: #000000;
-    font-size: 10vh;
-    font-family: 'Sottotitoli';
-    transform: rotate(-10deg);
-    
+.spacer{
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+.men-subtext{
+    max-width: 70vh;
+    margin: 0 auto; /* Per centrare l'elemento orizzontalmente */
+    display: flex; /* Per permettere l'allineamento orizzontale */
+    align-items: center;
+    font-family: 'Titoli';
+    font-size: 20px;
+    text-align: justify;
+    color: #292929a8;
+    margin-top: 1vh;
+    line-height: 1.2;
+
 }
 .men-ovale{
     width: 22vh;
     height: 7vh;
-    color: #000000;
+    color: #000000; 
+    z-index: -1;
     transform: rotate(-10deg);
-    border: 1.5px solid #000000;
+    border: 0.8px solid #000000;
     border-radius: 100%;
-    margin-left: -16vh;
-    margin-top: 2vh;
+    margin-top: -10vh;
+
 }
-.men-subtext{
-    font-family: "Titoli";
-    color: #5C6B5F;
-    max-width: 85vh;
-    margin-left: 10vh;
-    margin-top: 2vh;
-    font-size: 18px;
+.men-title{
+    width: auto;
+    color: #000000; 
+    z-index: 1;
+    font-size: 10vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+    margin-left: 1vh;
+    
+}
+.pizza{
+    width: 30vh; 
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+}
+.pizza img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.pizzas{
+    display: flex;
+    justify-content: space-between; /* Distribuisce gli elementi all'interno del contenitore, con spazio uguale tra di loro e ai margini */
+    flex-direction: row;
+    margin-top: 5vh;
+}
+.btn{
+    display: flex;
+    margin-top: 8vh;
+    background-color: #5C6B5F;
+    border-radius: 14px;
+    width: 13vh;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Titoli';
+    font-weight: bold;
+    border: none;
+    outline: none;
 }
