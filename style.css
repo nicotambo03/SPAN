@@ -414,7 +414,7 @@ footer{
     position: absolute;
     top: 25.5vh;
     left: 12.5vh;
-    width: 25vh;
+    width: 35vh;
     height: 7vh;
     color: #fff;
     z-index: 1;
@@ -499,8 +499,8 @@ footer{
     
 }
 .pizza{
-    width: 30vh; 
-    height: 30vh; 
+    width: 24%; 
+    height: 24%; 
     display: flex;
     flex-direction: column;
 }
@@ -510,7 +510,7 @@ footer{
 }
 .pizzas{
     display: flex;
-    justify-content: space-between; /* Distribuisce gli elementi all'interno del contenitore, con spazio uguale tra di loro e ai margini */
+    justify-content: space-between; 
     flex-direction: row;
     margin-top: 5vh;
 }
@@ -524,6 +524,7 @@ footer{
     justify-content: center;
     align-items: center;
     border: none;
+    transition: background-color 0.3s ease;
 }
 .btn a{
     text-decoration: none;
@@ -532,4 +533,26 @@ footer{
     font-weight: bold;
     border: none;
     outline: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pizza-name{
+    font-family: 'Titoli';
+    color: #5C6B5F;
+    font-weight: bold;
+}
+.btn-cont{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn:hover{
+    background-color: #fff;
+}
+.btn:hover a{
+    color: #5C6B5F;
 }
