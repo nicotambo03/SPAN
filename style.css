@@ -466,15 +466,16 @@ footer{
 }
 .men-subtext{
     max-width: 70vh;
-    margin: 0 auto; /* Per centrare l'elemento orizzontalmente */
-    display: flex; /* Per permettere l'allineamento orizzontale */
+    margin: 0 auto; 
+    display: flex;
     align-items: center;
     font-family: 'Titoli';
     font-size: 20px;
     text-align: justify;
     color: #292929a8;
-    margin-top: 1vh;
+    margin-top: 2vh;
     line-height: 1.2;
+    margin-left: 12vh;
 
 }
 .men-ovale{
@@ -524,7 +525,12 @@ footer{
     justify-content: center;
     align-items: center;
     border: none;
+<<<<<<< Updated upstream
     transition: background-color 0.3s ease;
+=======
+    align-self: flex-end;
+    transition: background-color 0.3s;
+>>>>>>> Stashed changes
 }
 .btn a{
     text-decoration: none;
@@ -536,6 +542,7 @@ footer{
     width: 100%;
     height: 100%;
     display: flex;
+<<<<<<< Updated upstream
     align-items: center;
     justify-content: center;
 }
@@ -549,10 +556,31 @@ footer{
     height: max-content;
     display: flex;
     justify-content: flex-end;
+=======
+    align-items: center; 
+    justify-content: center; 
+    
+>>>>>>> Stashed changes
 }
 .btn:hover{
     background-color: #fff;
 }
 .btn:hover a{
     color: #5C6B5F;
+<<<<<<< Updated upstream
 }
+=======
+}
+.pizza-name{
+    margin-top: 1.5vh;
+    font-family: 'Titoli';
+    color: #5C6B5F;
+    font-size: 18px;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    justify-content: flex-end;
+}
+>>>>>>> Stashed changes
