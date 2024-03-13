@@ -517,7 +517,7 @@ footer{
 }
 .btn{
     display: flex;
-    margin-top: 8vh;
+    margin-top: 6vh;
     background-color: #5C6B5F;
     border-radius: 14px;
     width: 13vh;
@@ -525,12 +525,9 @@ footer{
     justify-content: center;
     align-items: center;
     border: none;
-<<<<<<< Updated upstream
     transition: background-color 0.3s ease;
-=======
     align-self: flex-end;
-    transition: background-color 0.3s;
->>>>>>> Stashed changes
+
 }
 .btn a{
     text-decoration: none;
@@ -542,7 +539,6 @@ footer{
     width: 100%;
     height: 100%;
     display: flex;
-<<<<<<< Updated upstream
     align-items: center;
     justify-content: center;
 }
@@ -556,20 +552,15 @@ footer{
     height: max-content;
     display: flex;
     justify-content: flex-end;
-=======
     align-items: center; 
     justify-content: center; 
     
->>>>>>> Stashed changes
 }
 .btn:hover{
     background-color: #fff;
 }
 .btn:hover a{
     color: #5C6B5F;
-<<<<<<< Updated upstream
-}
-=======
 }
 .pizza-name{
     margin-top: 1.5vh;
@@ -583,4 +574,61 @@ footer{
     height: max-content;
     justify-content: flex-end;
 }
->>>>>>> Stashed changes
+.about-sec{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+}
+.ab-start,
+.ab-end{
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    background-color: #5C6B5F;
+    flex-direction: row;
+    align-items: center;
+}
+.ab-image{
+    width: 100%;
+    height: 43vh;
+}
+.ab-image img{
+    max-height: 43vh;
+    width: 100%;
+    object-fit: cover;
+}
+.ab-ovale{
+    width: 25åvh;
+    height: 8vh;
+    color: #ffffff; 
+    z-index: -1;
+    transform: rotate(-10deg);
+    border: 0.8px solid #ffffff;
+    border-radius: 100%;
+    margin-top: -11vh;
+}
+.ab-text{
+    width: auto;
+    color: #ffffff; 
+    z-index: 1;
+    font-size: 10vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+}
+.ab-textlogo{
+    margin-left: 10vh;
+    margin-bottom: 5vh;
+}
+.ab-subtext{
+    color: rgba(255, 255, 255, 0.761);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Titoli';
+    line-height: 1.5;
+    max-width: 65vh;
+    margin-left: 15%;
+}
+.ab-ovale-end{
+    
+}
