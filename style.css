@@ -115,7 +115,18 @@ body{
     border: 1.5px solid #fff;
     border-radius: 100%;
 }
-
+.sottotitolo-ovale-about{
+    position: absolute;
+    top: 49vh;
+    left: 54vh; 
+    width: 45vh;
+    height: 7.5vh;
+    color: #fff; 
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+}
 .button {
     background-color: white; 
     border: none; 
@@ -846,4 +857,33 @@ footer{
     width: 80%;
     height: 1px;
     background-color: #ffffff;
+}
+.about-sec-first,.about-sec-second,.about-sec-third,.about-sec-fourth{
+    height: 78vh;
+    display: flex;
+    
+}
+.about-sec-first,.about-sec-third{
+    background: #5C6B5F;
+}
+.about-sec-second,.about-sec-fourth{
+    background: #ffffff;
+}
+.about-sec-first{
+    display: flex;
+    justify-content: center;
+}
+.about-first-subsec{
+    display: flex;
+    height: 90%;
+    font-family: 'Titoli';
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    color: white;
+    white-space: space-between;
+}
+.about-first-title{
+    font-size: 3vh;
+    max-width: 60%;
 }
