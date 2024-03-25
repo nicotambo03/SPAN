@@ -714,7 +714,7 @@ footer{
     font-weight: bold;
     font-family: 'Titoli';
     line-height: 1.5;
-    max-width: 40vh;
+    max-width: 50vh;
     margin-left: 6%;
     margin-top: 11vh;
 }
@@ -727,7 +727,7 @@ footer{
 }
 .gallery-btn-cont{
     display: flex;
-    width: 16vh;
+    width: 19vh;
     height: 5vh;
     background-color: #5C6B5F;
     border-radius: 12px;
