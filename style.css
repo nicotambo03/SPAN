@@ -863,10 +863,10 @@ footer{
     display: flex;
     
 }
-.about-sec-first,.about-sec-third{
+.about-sec-first,.about-sec-fourth{
     background: #5C6B5F;
 }
-.about-sec-second,.about-sec-fourth{
+.about-sec-second,.about-sec-third{
     background: #ffffff;
 }
 .about-sec-first{
@@ -905,4 +905,108 @@ footer{
     max-width: 47%;
     font-size: 2vh;
     color: #ffffffc8;
+}
+.about-second-subsec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.about-photo1,.about-photo4{
+    width: 37.5%;
+    height: 100%;
+    background-color: red;
+}
+.about-photo23{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    background-color: yellow;
+    flex-direction: column;
+}   
+.about-photo2{
+    width: 100%;
+    height: 50%;
+    background-color: violet;
+}
+.about-photo3{
+    width: 100%;
+    height: 50%;
+
+}
+.about-photo1 img,.about-photo2 img,.about-photo3 img,.about-photo4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-subsec-third{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-sec-third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-textlogotexts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+}
+.about-textlogo{
+    width: 40vh;
+}
+.ovale-textlogo{
+    position: absolute;
+    width: 33vh;
+    height: 8vh;
+    color: #5C6B5F; 
+    z-index: 1;
+    transform: rotate(-10deg);
+    border: 1.5px solid #5C6B5F;
+    border-radius: 100%;
+}
+.sottotitolo-textlogo{
+    width: auto;
+    color: #5C6B5F; 
+    z-index: 1;
+    font-size: 10vh;
+    font-family:'Sottotitoli';
+    transform: rotate(-10deg);
+    margin-top: -2vh;
+}
+.about-texts{
+    margin-left: 15vh;
+    font-family: 'Titoli';
+    max-width: 60vh;
+    color: #5C6B5F;
+    font-size: 2vh;
+    margin-top: -3vh;
+}
+.about-sec-fourth{
+    display: flex;
+    flex-direction: row;    
+}
+.about-subsec-texts,.about-subsec-image{
+    width: 50%;
+    height: 100%;
+}
+.about-subsec-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-subsec-texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-subsec-texts-sub{
+    width: 80%;
+    height: 80%;
 }
