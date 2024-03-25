@@ -1010,3 +1010,26 @@ footer{
     width: 80%;
     height: 80%;
 }
+
+.descrizioneGallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.sinistra{
+    width: 60%;
+    font-family: 'Titoli';
+    font-size: 3.5vh;
+    padding: 10vh;
+    color:#515151;
+    font-weight: bolder;
+}
+
+.destra{
+    width: 40%;
+    padding: 10vh;
+    font-size: 2vh;
+    color:#515151;
+    font-family: 'Barra';
+    font-weight: bolder;
+}
