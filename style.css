@@ -963,7 +963,7 @@ footer{
 }
 .ovale-textlogo{
     position: absolute;
-    width: 33vh;
+    width: 30vh;
     height: 8vh;
     color: #5C6B5F; 
     z-index: 1;
@@ -991,6 +991,7 @@ footer{
 .about-sec-fourth{
     display: flex;
     flex-direction: row;    
+    align-items: center;
 }
 .about-subsec-texts,.about-subsec-image{
     width: 50%;
@@ -1005,10 +1006,37 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
+    height: 100%;
 }
 .about-subsec-texts-sub{
+    display: flex;
     width: 80%;
     height: 80%;
+    justify-content:  center;
+    flex-direction: column;
+}
+.about-subsec-texts-sub *{
+    margin-bottom: 10vh;
+}
+.about-subsec-text-fourth{
+    font-family: 'Titoli';
+    color: #ffffffb2;
+    font-size: 3vh;
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 15vh;
+}
+.spacer-fourth{
+    height: 1px;
+    width: 80%;
+    background: #ffffff;
+}
+.about-subsec-subtext-fourth{
+    font-family: 'Titoli';
+    color: #ffffffb2;
+    font-size: 2vh;
+    max-width: 80%;
 }
 
 .descrizioneGallery{
