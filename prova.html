@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel con immagini sfocate</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .carousel {
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel img {
+    height: 400px;
+    flex-shrink: 0;
+    opacity: 0.5; /* Opacità predefinita */
+    transition: opacity 0.5s ease;
+  }
+
+  .carousel img.center {
+    width: 60%; /* Larghezza maggiore per l'immagine centrale */
+    opacity: 1; /* Opacità massima per l'immagine centrale */
+  }
+
+  .carousel img.blur {
+    filter: blur(5px); /* Sfoca l'immagine */
+    position: absolute;
+    top: 0;
+    width: 20%; /* Larghezza delle immagini sfocate */
+    opacity: 0.5; /* Opacità delle immagini sfocate */
+  }
+
+  .carousel img.blur.left {
+    left: 0; /* Posiziona l'immagine sfocata a sinistra */
+  }
+
+  .carousel img.blur.right {
+    right: 0; /* Posiziona l'immagine sfocata a destra */
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+<div class="carousel">
+  <div class="controls">
+    <button onclick="prevImage()">&#10094;</button>
+    <button onclick="nextImage()">&#10095;</button>
+  </div>
+  <img src="https://via.placeholder.com/600x400?text=Immagine+1" alt="Immagine 1" class="center">
+  <img src="https://via.placeholder.com/600x400?text=Immagine+2" alt="Immagine 2" class="blur left">
+  <img src="https://via.placeholder.com/600x400?text=Immagine+3" alt="Immagine 3" class="blur right">
+</div>
+
+<script>
+  // Codice JavaScript per creare l'effetto di scorrimento automatico
+  const images = document.querySelectorAll('.carousel img');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach(image => image.classList.add('blur'));
+    images[index].classList.remove('blur');
+    currentIndex = index;
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+</script>
+</body>
+</html>
