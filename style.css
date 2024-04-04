@@ -1066,6 +1066,7 @@ footer{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 60vh;
   }
 
   .sidebar {
@@ -1075,7 +1076,7 @@ footer{
 
   .sidebar img {
     width: 35vh; /* Aumenta la dimensione dell'immagine */
-    max-height: 30vh;
+    height: 35vh;
     opacity: 0.8; /* Opacità predefinita */
   }
 
@@ -1087,7 +1088,8 @@ footer{
 
   .carousel img {
     width: 100%;
-    height: auto;
+    height: 60vh;
+    object-fit: cover;
   }
 
   .controls {
@@ -1107,4 +1109,26 @@ footer{
     border-radius: 100%;
     cursor: pointer;
     font-size: 2vh;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 3vh;
+  }
+
+  .bar {
+    width: 5vh;
+    height: 0.2vh;
+    margin: 1vh;
+    background-color: lightgray;
+    transition: background-color 0.3s ease;
+  }
+
+  .active {
+    background-color: black;
+  }
+
+  .active.double {
+    width: 8vh; 
   }

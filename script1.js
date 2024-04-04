@@ -50,43 +50,58 @@ document.getElementById('it').addEventListener('click', function () {
 
 
 const images = document.querySelectorAll('.carousel img');
-let currentIndex = 0;
+  const navigation = document.getElementById('navigation');
+  let currentIndex = 0;
 
-function showImage(index) {
-  images.forEach((image, i) => {
-    if (i === index) {
-      image.style.display = 'block';
-    } else {
-      image.style.display = 'none';
+  function showImage(index) {
+    images.forEach((image, i) => {
+      if (i === index) {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+    currentIndex = index;
+    updateSidebarImages();
+    updateNavigation();
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  function updateSidebarImages() {
+    const sidebarLeft = document.getElementById('sidebarLeft');
+    const sidebarRight = document.getElementById('sidebarRight');
+    const leftIndex = (currentIndex - 1 + images.length) % images.length;
+    const rightIndex = (currentIndex + 1) % images.length;
+
+    sidebarLeft.innerHTML = `<img src="${images[leftIndex].src}" alt="Immagine ${leftIndex + 1}">`;
+    sidebarRight.innerHTML = `<img src="${images[rightIndex].src}" alt="Immagine ${rightIndex + 1}">`;
+
+    sidebarLeft.querySelector('img').style.opacity = '0.5';
+    sidebarRight.querySelector('img').style.opacity = '0.5';
+  }
+
+  function updateNavigation() {
+    navigation.innerHTML = '';
+    for (let i = 0; i < images.length; i++) {
+      const bar = document.createElement('div');
+      bar.classList.add('bar');
+      if (i === currentIndex) {
+        bar.classList.add('active');
+        if (i === currentIndex) {
+            bar.classList.add('double');
+        }
+      }
+      navigation.appendChild(bar);
     }
-  });
-  currentIndex = index;
-  updateSidebarImages();
-}
+  }
 
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-}
-
-function updateSidebarImages() {
-  const sidebarLeft = document.getElementById('sidebarLeft');
-  const sidebarRight = document.getElementById('sidebarRight');
-  const leftIndex = (currentIndex - 1 + images.length) % images.length;
-  const rightIndex = (currentIndex + 1) % images.length;
-
-  sidebarLeft.innerHTML = `<img src="${images[leftIndex].src}" alt="Immagine ${leftIndex + 1}">`;
-  sidebarRight.innerHTML = `<img src="${images[rightIndex].src}" alt="Immagine ${rightIndex + 1}">`;
-
-  // Aggiorna stile immagini nei div laterali
-  sidebarLeft.querySelector('img').style.opacity = '0.5';
-  sidebarRight.querySelector('img').style.opacity = '0.5';
-}
-
-// Mostra la prima immagine all'avvio
-showImage(0);
+  showImage(0);
