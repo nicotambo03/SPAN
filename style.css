@@ -1075,7 +1075,7 @@ footer{
 
   .sidebar img {
     width: 35vh; /* Aumenta la dimensione dell'immagine */
-    height: 35vh; /* Aumenta la dimensione dell'immagine */
+    max-height: 30vh;
     opacity: 0.8; /* Opacità predefinita */
   }
 
