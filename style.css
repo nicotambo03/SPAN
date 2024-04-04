@@ -1062,3 +1062,49 @@ footer{
     font-weight: bolder;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 33.3%;
+    display: flex;
+  }
+
+  .sidebar img {
+    width: 35vh; /* Aumenta la dimensione dell'immagine */
+    height: 35vh; /* Aumenta la dimensione dell'immagine */
+    opacity: 0.8; /* Opacità predefinita */
+  }
+
+  .carousel {
+    width: 33.3%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .controls button {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 2vh;
+  }

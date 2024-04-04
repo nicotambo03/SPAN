@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carousel con immagini sfocate</title>
+<title>Carousel con immagini</title>
 <style>
   body {
     margin: 0;
@@ -13,39 +13,32 @@
     height: 100vh;
   }
 
-  .carousel {
-    width: 600px;
+  .container {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 33.3%;
+    display: flex;
+  }
+
+  .sidebar img {
+    width: 35vh; /* Aumenta la dimensione dell'immagine */
+    height: 35vh; /* Aumenta la dimensione dell'immagine */
+    opacity: 0.8; /* Opacità predefinita */
+  }
+
+  .carousel {
+    width: 33.3%;
     overflow: hidden;
     position: relative;
   }
 
   .carousel img {
-    height: 400px;
-    flex-shrink: 0;
-    opacity: 0.5; /* Opacità predefinita */
-    transition: opacity 0.5s ease;
-  }
-
-  .carousel img.center {
-    width: 60%; /* Larghezza maggiore per l'immagine centrale */
-    opacity: 1; /* Opacità massima per l'immagine centrale */
-  }
-
-  .carousel img.blur {
-    filter: blur(5px); /* Sfoca l'immagine */
-    position: absolute;
-    top: 0;
-    width: 20%; /* Larghezza delle immagini sfocate */
-    opacity: 0.5; /* Opacità delle immagini sfocate */
-  }
-
-  .carousel img.blur.left {
-    left: 0; /* Posiziona l'immagine sfocata a sinistra */
-  }
-
-  .carousel img.blur.right {
-    right: 0; /* Posiziona l'immagine sfocata a destra */
+    width: 100%;
+    height: auto;
   }
 
   .controls {
@@ -59,33 +52,49 @@
   }
 
   .controls button {
-    background: none;
-    border: none;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 100%;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 2vh;
   }
 </style>
 </head>
 <body>
-<div class="carousel">
-  <div class="controls">
-    <button onclick="prevImage()">&#10094;</button>
-    <button onclick="nextImage()">&#10095;</button>
+<div class="container">
+  <div class="sidebar" id="sidebarLeft" style="justify-content: right; align-items: center;"></div>
+  <div class="carousel">
+    <div class="controls">
+      <button onclick="prevImage()">&#10094;</button>
+      <button onclick="nextImage()">&#10095;</button>
+    </div>
+    <img src="./Assets/Images/cucina1.jpg" alt="Immagine 1">
+    <img src="./Assets/Images/cucina7.jpg" alt="Immagine 2">
+    <img src="./Assets/Images/cucina2.jpg" alt="Immagine 3">
+    <img src="./Assets/Images/cucina6.jpg" alt="Immagine 4">
+    <img src="./Assets/Images/cucina3.jpg" alt="Immagine 5">
+    <img src="./Assets/Images/cucina5.jpg" alt="Immagine 6">
+    <img src="./Assets/Images/cucina4.jpg" alt="Immagine 7">
+
   </div>
-  <img src="https://via.placeholder.com/600x400?text=Immagine+1" alt="Immagine 1" class="center">
-  <img src="https://via.placeholder.com/600x400?text=Immagine+2" alt="Immagine 2" class="blur left">
-  <img src="https://via.placeholder.com/600x400?text=Immagine+3" alt="Immagine 3" class="blur right">
+  <div class="sidebar" id="sidebarRight" style="justify-content: left; align-items: center;"></div>
 </div>
 
 <script>
-  // Codice JavaScript per creare l'effetto di scorrimento automatico
   const images = document.querySelectorAll('.carousel img');
   let currentIndex = 0;
 
   function showImage(index) {
-    images.forEach(image => image.classList.add('blur'));
-    images[index].classList.remove('blur');
+    images.forEach((image, i) => {
+      if (i === index) {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
     currentIndex = index;
+    updateSidebarImages();
   }
 
   function nextImage() {
@@ -97,6 +106,23 @@
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
   }
+
+  function updateSidebarImages() {
+    const sidebarLeft = document.getElementById('sidebarLeft');
+    const sidebarRight = document.getElementById('sidebarRight');
+    const leftIndex = (currentIndex - 1 + images.length) % images.length;
+    const rightIndex = (currentIndex + 1) % images.length;
+
+    sidebarLeft.innerHTML = `<img src="${images[leftIndex].src}" alt="Immagine ${leftIndex + 1}">`;
+    sidebarRight.innerHTML = `<img src="${images[rightIndex].src}" alt="Immagine ${rightIndex + 1}">`;
+
+    // Aggiorna stile immagini nei div laterali
+    sidebarLeft.querySelector('img').style.opacity = '0.5';
+    sidebarRight.querySelector('img').style.opacity = '0.5';
+  }
+
+  // Mostra la prima immagine all'avvio
+  showImage(0);
 </script>
 </body>
 </html>
