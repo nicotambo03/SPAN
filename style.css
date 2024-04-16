@@ -1148,7 +1148,7 @@ footer{
     object-fit: cover;
   }
 
-  @media screen and (max-width:430px) {
+  @media screen and (max-width:730px) {
     .menu {
         --s: 24px; /* control the size */
         --c: black; /* the color */
