@@ -1238,4 +1238,8 @@ footer{
       .header{
         justify-content: space-between;
       }
+      .parte-invariata{
+        width: 177%;
+        overflow: auto;
+      }
   }
