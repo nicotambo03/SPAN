@@ -1230,11 +1230,9 @@ footer{
       }
       .header{
         justify-content: space-between;
+        width: 100%;
       }
       .parte-invariata{
         width: 100%;
-      }
-      body{
-        overflow-x: hidden;
       }
   }
