@@ -1238,4 +1238,17 @@ footer{
       body{
         overflow-x: hidden;
       }
-  }
+      .text-image{
+        font-size: 8vh;
+      }
+      .sottotitolo-home,.sottotitolo-ovale-home{
+        width: 10vh;
+      }
+      .subtitle{
+        width: 12vh;
+      }
+      div{
+        flex-wrap: wrap;
+      }
+    
+    }
