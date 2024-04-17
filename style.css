@@ -1247,8 +1247,4 @@ footer{
       .subtitle{
         width: 12vh;
       }
-      div{
-        flex-wrap: wrap;
-      }
-    
     }
