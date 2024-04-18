@@ -1240,11 +1240,40 @@ footer{
       }
       .text-image{
         font-size: 8vh;
+        left: 1vh;
+        top: 21vh;
       }
       .sottotitolo-home,.sottotitolo-ovale-home{
-        width: 10vh;
+        left: 2vh;
+        top: 15vh;
+      }
+      .sottotitolo-home{
+        font-size: 5vh;
+        width: 25vh;
+      }
+      .sottotitolo-ovale-home{
+        height: 4vh;
+        width: 20vh;
+        top: 16vh;
+        left: 1vh;
       }
       .subtitle{
-        width: 12vh;
+        width: 30vh;
+        top: 30vh;
+        left: 1.5vh;
+        font-size: 1.5vh;
+      }
+      .freccia{
+        top: 36vh;
+        width: 5vh;
+        height: 2.5vh;
+        left: -0.4vh;
+      }
+      .subtext{
+        top: 35vh;
+        font-size: 0.8vh;
+        left: 4vh;
+        height: 7vh;
+        width: 26vh;
       }
     }
